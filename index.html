@@ -7,7 +7,7 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/white.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +24,122 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<!-- 1 - INTRO -->
+				<section>
+					<img data-src="./assets/logo_docker.png">
+					<p>
+						<br><br><br>
+						Denis Olek<br>
+						<small>denis.olek@gmail.com</small>
+					</p>
+				</section>
+				<!-- SECTION 2 -->
+				<section>
+					<section>
+						<h2>Jakie problemy chcemy rozwiązać ?</h2>
+					</section>
+					<section>
+						<img data-src="./assets/umniedziala.png">
+					</section>
+					<section>
+						<h3>1 projekt - 10 osób</h3>
+							<small class="fragment visible">
+								Mirek zrobił "pusha"
+							</small><br>
+							<img width="200" height="200"data-src="./assets/680.png" class="fragment visible">
+							<img width="200" height="200"data-src="./assets/721.png" class="fragment visible">
+							<img width="200" height="200"data-src="./assets/590.png" class="fragment visible">
+							<img width="200" height="200"data-src="./assets/426.png" class="fragment visible">
+							<img width="200" height="200"data-src="./assets/590.png" class="fragment visible">
+							<img width="200" height="200"data-src="./assets/721.png" class="fragment visible">
+							<img width="200" height="200"data-src="./assets/680.png" class="fragment visible">
+							<img width="200" height="200"data-src="./assets/426.png" class="fragment visible">
+					</section>
+					<section>
+						<img width="600" height="600"data-src="./assets/chmura.png">
+					</section>
+					<section>
+						<h3>1 osoba - wiele projektów</h3>
+							<img width="300" height="300"data-src="./assets/lamp.jpg" class="fragment visible">
+							<img width="500" height="300"data-src="./assets/larvavue.png" class="fragment visible">
+					</section>
+					<section>
+						<h3>Maszyny wirtualne</h3>
+						<p class="fragment visible">
+							Samodzielne środowisko w systemie operacyjnym, które zachowuje się jak osobny komputer. Dzięki temu program uruchomiony na maszynie wirtualnej „myśli”, że działa na rzeczywistym sprzęcie, podczas gdy w istocie pracuje na sprzęcie wirtualnym, „udawanym” przez odpowiednie oprogramowanie.
+						</p>
+					</section>
+					<section>
+						HALO, przecież jesteśmy leniwi! Musi istnieć jakieś narzędzie które to wszystko ułatwia.
+					</section>
+					<section>
+						<img width="300" height="300" data-src="./assets/vagrant.png">
+						<small>Vagrant pozwala na automatyzację tworzenia i konfiguracji maszyn wirtualnych na Windows, Linux i Mac. Przy pomocy jednego pliku możemy postawić maszynę wirtualną z określonym systemem operacyjnym, skonfigurować połączenia sieciowe, zainstalować wymagane pakiety, skonfigurować usługi czy ustawić współdzielenie katalogów z hostem. Raz przygotowana konfiguracja Vagranta odciąża nas od zarządzania środowiskiem niezbędnym dla konkretnego projektu.</small>
+					</section>
+					<section>
+						vagrantfile
+						<img data-src="./assets/vagrantfile.png">
+					</section>
+					<section>
+						bootstrap.sh
+						<img data-src="./assets/bootstrapsh.png">
+					</section>
+				</section>
+				<!-- SECTION 3 -->
+				<section>
+					<section>
+						<h2>Czym jest docker?</h2>
+					</section>
+					<section>
+						<img width="150" height="150"  data-src="./assets/docker2.png">
+						<p>Docker jest narzędziem, za pomocą którego można umieścić aplikacje oraz biblioteki przez nią wymagane, w lekkim, przenośnym, wirtualnym <b class="fragment highlight-blue">kontenerze</b>, dzięki temu można uruchomić ją na każdym systemie z zainstalowanym dockerem.</p>
+					</section>
+					<section>
+						<p>Docker bazuje na <b>LXC</b></p>
+						<p>Kontenery linuxowe są metodą wirtualizacji umożliwiającą izolację aplikacji od reszty środowiska. Każdy kontener może mieć uruchomione własne procesy, posiadać swoje odrębne drzewo katalogów, własnych użytkowników.</p>
+					</section>
+					<section>
+						<h4>cgroups</h4>
+						<small class="fragment visible">Pozwalają przydzielać zasoby komputera poszczególnym procesom lub całym aplikacjom.</small><br><br>
+						<h4 class="fragment visible">namespaces</h4>
+						<small class="fragment visible">Oddzielenie poszczególnych części systemu od siebie w taki sposób, aby proces który działa w systemie, miał dostęp tylko do tych zasobów, które zostały dla niego wydzielone.</small>
+					</section>
+					<section data-background-color="#1f89c5">
+						<img data-src="./assets/vmdocker.png">
+					</section>
+					<section>
+						<p>Docker vs Virtual Machines</p>
+						<br><br><br>
+						<small class="fragment visible">Performance characteristics of traditional VMs vs docker containers <br><br> Boden Russel</small>
+					</section>
+					<section>
+						<img data-src="./assets/computenode.png">
+					</section>
+					<section>
+						<img data-src="./assets/size.png">
+					</section>
+					<section>
+						<img data-src="./assets/test1_0.png">
+					</section>
+					<section>
+						<img data-src="./assets/test1_1.png">
+					</section>
+					<section>
+						<img data-src="./assets/test1_2.png">
+					</section>
+					<section>
+						<img data-src="./assets/test2_0.png">
+					</section>
+					<section>
+						<img data-src="./assets/test2_1.png">
+					</section>
+					<section>
+						<img data-src="./assets/test2_2.png">
+					</section>
+					<section>
+						<img data-src="./assets/test2_3.png">
+					</section>
+				</section>
 			</div>
 		</div>
 
@@ -36,7 +150,7 @@
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				history: true,
-
+				backgroundTransition: 'convex', // none/fade/slide/convex/concave/zoom
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
